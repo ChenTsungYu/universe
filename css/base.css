@@ -1,0 +1,285 @@
+@charset "UTF-8";
+html, body {
+  /*  調整高度  */
+  height: 100%;
+  overflow: hidden; }
+
+#universe {
+  background: -webkit-radial-gradient(#555, #000);
+  background: -o-radial-gradient(#555, #000);
+  background: radial-gradient(#555, #000); }
+
+@-webkit-keyframes starFlash {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes starFlash {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+/* 添加星星 */
+#stars {
+  height: 100%;
+  background: url(../img/cover.png);
+  background-size: cover;
+  -webkit-animation: starFlash 2s infinite alternate;
+  animation: starFlash 2s infinite alternate; }
+
+@-webkit-keyframes sunLight {
+  from {
+    -webkit-box-shadow: 0 0 45px #f5c91a;
+    box-shadow: 0 0 45px #f5c91a; }
+  to {
+    -webkit-box-shadow: 0 0 90px #f5c91a;
+    box-shadow: 0 0 90px #f5c91a; } }
+
+@keyframes sunLight {
+  from {
+    -webkit-box-shadow: 0 0 45px #f5c91a;
+    box-shadow: 0 0 45px #f5c91a; }
+  to {
+    -webkit-box-shadow: 0 0 90px #f5c91a;
+    box-shadow: 0 0 90px #f5c91a; } }
+
+#sun {
+  width: 50px;
+  height: 50px;
+  background: -webkit-radial-gradient(#f5c313, #ec7e08);
+  background: -o-radial-gradient(#f5c313, #ec7e08);
+  background: radial-gradient(#f5c313, #ec7e08);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: -25px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 45px #f5c91a;
+  box-shadow: 0 0 45px #f5c91a;
+  -webkit-animation: sunLight 5s infinite alternate;
+  animation: sunLight 5s infinite alternate; }
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0);
+    transform: rotate(0); }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0);
+    transform: rotate(0); }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+#earthOrbit {
+  width: 300px;
+  height: 300px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -150px;
+  border-radius: 100%;
+  -webkit-animation: spin 25s linear infinite;
+  animation: spin 30s linear infinite; }
+
+#earth {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  margin-left: -15px;
+  -webkit-animation: spin 20s linear infinite;
+  animation: spin 20s linear infinite; }
+
+#moonOrbit {
+  /*border: 1px solid blue;*/
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  margin-left: -25px;
+  border-radius: 100%;
+  -webkit-animation: spin 10s linear infinite;
+  animation: spin 10s linear infinite; }
+
+#moon {
+  width: 15px;
+  height: 15px;
+  background: -webkit-radial-gradient(#ddd, #888);
+  background: -o-radial-gradient(#ddd, #888);
+  background: radial-gradient(#ddd, #888);
+  border-radius: 100%; }
+
+#mercuryOrbit {
+  width: 100px;
+  height: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  border-radius: 100%;
+  -webkit-animation: spin 10s linear infinite;
+  animation: spin 10s linear infinite; }
+
+#mercury {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  margin-left: -25px;
+  -webkit-animation: spin 20s linear infinite;
+  animation: spin 20s linear infinite; }
+
+#venusOrbit {
+  width: 200px;
+  height: 200px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
+  border-radius: 100%;
+  -webkit-animation: spin 20s linear infinite;
+  animation: spin 20s linear infinite; }
+
+#venus {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  /* 起步點相異 */
+  top: 40%;
+  margin-top: -25px;
+  margin-left: -25px;
+  -webkit-animation: spin 20s linear infinite;
+  animation: spin 20s linear infinite; }
+
+#marsOrbit {
+  width: 400px;
+  height: 400px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 100%;
+  -webkit-animation: spin 19s linear infinite;
+  animation: spin 19s linear infinite; }
+
+#mars {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  margin-left: -25px;
+  -webkit-animation: spin 20s linear infinite;
+  animation: spin 20s linear infinite; }
+
+#jupiterOrbit {
+  width: 500px;
+  height: 500px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -250px;
+  border-radius: 100%;
+  -webkit-animation: spin 27s linear infinite;
+  animation: spin 27s linear infinite; }
+
+#jupiter {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  margin-left: -25px;
+  -webkit-animation: spin 20s linear infinite;
+  animation: spin 20s linear infinite; }
+
+#saturnOrbit {
+  width: 600px;
+  height: 600px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -300px;
+  margin-left: -300px;
+  border-radius: 100%;
+  -webkit-animation: spin 29s linear infinite;
+  animation: spin 34s linear infinite; }
+
+#saturn {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  margin-top: -40px;
+  margin-left: -40px;
+  -webkit-animation: spin 20s linear infinite;
+  animation: spin 20s linear infinite; }
+
+#uranusOrbit {
+  width: 700px;
+  height: 700px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -350px;
+  margin-left: -350px;
+  border-radius: 100%;
+  -webkit-animation: spin 25s linear infinite;
+  animation: spin 25s linear infinite; }
+
+#uranus {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  margin-top: -40px;
+  margin-left: -40px;
+  -webkit-animation: spin 20s linear infinite;
+  animation: spin 20s linear infinite; }
+
+#neptuneOrbit {
+  width: 800px;
+  height: 800px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -400px;
+  margin-left: -400px;
+  border-radius: 100%;
+  -webkit-animation: spin 27s linear infinite;
+  animation: spin 27s linear infinite; }
+
+#neptune {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  /* 相異 */
+  top: 60%;
+  margin-top: -25px;
+  margin-left: -25px;
+  -webkit-animation: spin 20s linear infinite;
+  animation: spin 20s linear infinite; }
